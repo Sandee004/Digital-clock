@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Digital Clock</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,129 +16,5 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background">
-        <br>
-        <div id="white-border">
-            <div id="black">
-                <span id="hours"></span>
-                <span id="slash">:</span>
-                <span id="mins"></span>
-                <span id="slash">:</span>
-                <span id="seconds"></span>
-            </div>
-        </div>
-        <p id="date"></p>
-    </div>
-
-    <script>
-    document.getElementById("background").style.cssText = `
-    background: lightgrey;
-    height: 280px;
-    border: 10px solid black;
-    `;
-    
-    document.getElementById("white-border").style.cssText = `
-  border: 8px solid white;
-    margin: 50px auto 0 auto;
-    height: 74px;
-    line-height: 100px;
-    display: block;
-    width: 240px;
-    border-radius: 8px;
-    text-align: center;
-`;
-    
-    document.getElementById("black").style.cssText = `
-    border: 3px solid black;
-    border-radius: 8px;
-    width: 235px;
-    height: 68px;
-    line-height: 70px;
-    background-color: black;
-    color: green;
-    font-weight: 700;
-`;
-
-    document.getElementById("hours").style.cssText = `
-    color: green;
-    font-size: 60px;
-    font-family: "Bebas Neue", cursive;
-    margin-right: 5px;
-    margin-bottom: 0;
-    vertical-align: middle;
-    letter-spacing: 2px;
-`;
-
-    document.getElementById("slash").style.cssText = `
-    color: green;
-    font-size: 60px;
-    font-family: "Bebas Neue", cursive;
-    margin-right: 5px;
-    margin-bottom: 0;
-    vertical-align: middle;
-    letter-spacing: 2px;
-`;
-
-    document.getElementById("mins").style.cssText = `
-    color: green;
-    font-size: 60px;
-    font-family: "Bebas Neue", cursive;
-    margin-right: 5px;
-    margin-bottom: 0;
-    vertical-align: middle;
-    letter-spacing: 2px;
-`;
-
-        document.getElementById("seconds").style.cssText = `
-    color: green;
-    font-size: 60px;
-    font-family: "Bebas Neue", cursive;
-    margin-right: 5px;
-    margin-bottom: 0;
-    vertical-align: middle;
-    letter-spacing: 2px;
-`;
-
-document.getElementById("date").style.cssText = `
-    font-weight: 600;
-    color: green;
-    text-align: center;
-`;
-
-        setInterval(showTime, 1000);
-
-        function showTime() {
-            let time = new Date();
-            let hour = time.getHours();
-            let min = time.getMinutes();
-            let sec = time.getSeconds();
-
-            hour = hour < 10 ? "0" + hour: hour;
-            min = min < 10 ? "0" + min: min;
-            sec = sec < 10 ? "0" + sec: sec;
-
-            document.getElementById("hours")
-            .innerHTML = hour;
-
-            document.getElementById("mins").innerHTML = min
-
-            document.getElementById("seconds").innerHTML = sec
-        }
-        showTime();
-
-
-        const monthNames = ["January", "February", "March", "April", "May", "June",
-            "July", "August", "September", "October", "November", "December"
-        ];
-
-        var d = new Date();
-        one = monthNames[d.getMonth()]
-        two = d.getDate()
-        three = d.getFullYear()
-
-
-        let everything = one + " " +two + ", " + three
-        document.getElementById("date").innerHTML = everything
-    </script>
-
+    <script src="script.js"></script>
 </body>
