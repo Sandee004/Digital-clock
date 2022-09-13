@@ -71,12 +71,11 @@
         height: 68px;
         line-height: 70px;
         background-color: black;
-        color: green;
+        color: red;
         font-weight: 700;
         `;
 
         document.getElementById("hours").style.cssText = `
-        color: green;
         font-size: 60px;
         font-family: "Bebas Neue", cursive;
         margin-right: 5px;
@@ -86,7 +85,6 @@
         `;
 
         document.getElementById("colon").style.cssText = `
-        color: green;
         font-size: 60px;
         font-family: "Bebas Neue", cursive;
         margin-right: 5px;
@@ -96,7 +94,6 @@
         `;
 
         document.getElementById("mins").style.cssText = `
-        color: green;
         font-size: 60px;
         font-family: "Bebas Neue", cursive;
         margin-right: 5px;
@@ -106,7 +103,6 @@
         `;
 
         document.getElementById("colon2").style.cssText = `
-        color: green;
         font-size: 60px;
         font-family: "Bebas Neue", cursive;
         margin-right: 5px;
@@ -116,7 +112,6 @@
         `;
 
         document.getElementById("seconds").style.cssText = `
-        color: green;
         font-size: 60px;
         font-family: "Bebas Neue", cursive;
         margin-right: 5px;
@@ -127,7 +122,7 @@
 
         document.getElementById("date").style.cssText = `
         font-weight: 600;
-        color: green;
+        color: red;
         text-align: center;
         `;
 
